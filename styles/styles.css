@@ -1,0 +1,40 @@
+main{
+    max-width: 150px;
+    width: 200px;
+    height: auto;
+    
+    margin: 19px;
+    border: 1px  rgb(0 0 0 / 0.2);/* Light border */
+}
+
+
+
+aside img{
+
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(0 0 0 / 0.2);/* Light border */
+
+}
+
+aside{
+    width: 200px;
+    height: auto;
+    margin: 19px;
+    border: 1px solid rgb(0 0 0 / 0.2);/* Light border */
+    padding: 1rem;
+    background-color: #cbbcbc;
+    color: #333;
+    text-align: center;
+    
+} 
+
+p {padding: 0;}
+
+footer {
+   margin-top: 15px;
+   border-top: 1px solid #000;
+   text-align: center;
+    
+}
+
