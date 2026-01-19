@@ -1,0 +1,74 @@
+/* Ese código CSS es un reset básico que elimina los estilos predeterminados del navegador para márgenes (margin: 0), */
+/* rellenos (padding: 0) y asegura que box-sizing: border-box; */
+/* incluya el padding y el borde dentro del ancho y alto definidos, */
+/* facilitando el diseño y la creación de layouts consistentes y predecibles, */
+/* evitando que los elementos crezcan inesperadamente al agregarles estilos. */
+
+* {
+    margin: 0;
+    /* crear espacio interno entre el contenido de un elemento (texto, imágenes) y su borde */
+    padding: 0;
+    /* se usa para controlar cómo se calculan las dimensiones (ancho y alto) de una caja, */
+    /* determinando si el padding (relleno) y el border (borde) se incluyen dentro de las medidas width y height especificadas */
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    /* se usa para asignar un color de fondo sólido a cualquier elemento HTML */
+    background-color: #333333;
+    /* para definir el color del texto (primer plano) y decoraciones de texto */
+    color: #ffffff;
+    /* text-align: center;
+       en CSS se usa para alinear horizontalmente el contenido en línea (como texto, imágenes pequeñas o enlaces) dentro de un elemento de bloque (como <div>, <p>, <h1>), */
+    text-align: center;
+    /* e usa para crear espacio exterior (margen) alrededor de un elemento HTML, */
+    /* separándolo de otros elementos y controlando su posición en la página */
+    padding: 15px 0;
+}
+
+header p {
+    /* definir todas las propiedades tipográficas de un elemento en una sola línea de código */
+    font-size: 2em;
+
+}
+
+main h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2.5em;
+
+}
+
+picture img {
+    display: block;
+    max-width: 42%;
+    margin: 15px auto;
+    box-shadow: 5px 5px 20px #333333;
+}
+
+section {
+
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 42%;
+    background-color: #dddddd;
+    line-height: 1.5em;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+section h2 {
+    border-bottom-width: 1px;
+    border-bottom-color: #333333;
+    border-bottom-style: solid;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+section ul {
+    padding-left: 25px;
+
+}
