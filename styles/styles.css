@@ -1,81 +1,49 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* BODY */
+/* CONTENEDOR GENERAL */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
 }
 
-/* NAV */
-nav {
-    background-color: darkblue;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-}
-
-nav a:hover {
-    background-color: steelblue;
-}
-
-/* MAIN LAYOUT */
+/* LAYOUT PRINCIPAL */
 main {
     max-width: 900px;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 250px 1fr;
     gap: 20px;
+    align-items: start;
 }
 
-/* TITLE */
+/* TITULO */
 main h1 {
-    grid-column: 1 / -1;
+    grid-column: 2 / 3;
     text-align: center;
     color: darkblue;
     margin-bottom: 10px;
 }
 
-/* MAIN IMAGE (LEFT) */
+/* IMAGEN MAIN */
 main img {
+    grid-column: 2 / 3;
     width: 100%;
     border: 1px solid steelblue;
     padding: 4px;
     box-shadow: 0 0 15px gray;
 }
 
-/* TEXT (RIGHT) */
+/* TEXTO MAIN */
 main p {
+    grid-column: 2 / 3;
     padding: 10px;
 }
 
-/* ASIDE */
+/* ASIDE A LA IZQUIERDA */
 aside {
-    max-width: 900px;
-    margin: 20px auto;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 15px;
     background-color: #eee;
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 20px;
-}
-
-aside h2 {
-    grid-column: 1 / -1;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 aside img {
