@@ -1,8 +1,14 @@
-/* RESET BÁSICO */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
 /* NAV */
@@ -11,23 +17,17 @@ nav {
     padding: 10px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 nav a {
     color: white;
-    padding: 10px 15px;
     text-decoration: none;
+    padding: 8px 12px;
 }
 
 nav a:hover {
     background-color: steelblue;
-    border-radius: 4px;
-}
-
-/* BODY */
-body {
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* MAIN LAYOUT */
@@ -35,44 +35,41 @@ main {
     max-width: 900px;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 300px 1fr;
     gap: 20px;
-    align-items: start;
 }
 
 /* TITLE */
-h1 {
+main h1 {
     grid-column: 1 / -1;
-    color: darkblue;
     text-align: center;
-    margin-bottom: 20px;
+    color: darkblue;
+    margin-bottom: 10px;
 }
 
-/* MAIN IMAGE */
+/* MAIN IMAGE (LEFT) */
 main img {
     width: 100%;
     border: 1px solid steelblue;
     padding: 4px;
-    box-shadow: 0 0 20px gray;
+    box-shadow: 0 0 15px gray;
 }
 
-/* PARAGRAPH */
-p {
+/* TEXT (RIGHT) */
+main p {
     padding: 10px;
-    line-height: 1.6;
 }
 
 /* ASIDE */
 aside {
     max-width: 900px;
     margin: 20px auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
     border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    padding: 15px;
     background-color: #eee;
-    color: #333;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
 }
 
 aside h2 {
@@ -83,12 +80,12 @@ aside h2 {
 
 aside img {
     width: 100%;
-    height: auto;
 }
 
 /* FOOTER */
 footer {
-    margin-top: 30px;
+    max-width: 900px;
+    margin: 20px auto;
     border-top: 1px solid #000;
     text-align: center;
     padding: 10px;
