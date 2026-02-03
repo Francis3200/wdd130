@@ -30,28 +30,33 @@ h3 {
 }
 
 /* =====================
-   HEADER
+   HEADER (GRID + FLEX)
 ===================== */
-header {
-    display: flex;
-    justify-content: space-between;
+.site-header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
     align-items: center;
     padding: 1rem 2rem;
     background-color: var(--accent1-color);
 }
 
-header img {
+.site-header img {
     width: 100px;
 }
 
-nav a {
+.navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation a {
     background-color: white;
     color: #000;
     text-decoration: none;
-    margin-left: 1rem;
     padding: 0.5rem 1rem;
     border: 1px solid #000;
     border-radius: 4px;
+    font-weight: bold;
 }
 
 /* =====================
@@ -63,7 +68,7 @@ nav a {
     margin: 2rem auto;
 }
 
-.hero img {
+.hero-img {
     width: 100%;
     display: block;
 }
@@ -78,7 +83,7 @@ nav a {
     padding: 0.5rem;
 }
 
-.hero article {
+.hero-article {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -90,24 +95,18 @@ nav a {
     align-items: center;
 }
 
-.hero article img {
+.hero-article img {
     width: 120px;
 }
 
 /* =====================
-   HISTORY
+   HISTORY (GRID)
 ===================== */
 .history {
     max-width: 1000px;
     margin: 3rem auto;
     display: grid;
-    grid-template-columns: 1fr 200px 1fr;
     gap: 1.5rem;
-    align-items: center;
-}
-
-.history h2 {
-    grid-column: 1 / -1;
     text-align: center;
 }
 
@@ -116,36 +115,33 @@ nav a {
 }
 
 /* =====================
-   ADVENTURE
+   ADVENTURE (GRID)
 ===================== */
-.adventures {
+.adventure {
     max-width: 1000px;
     margin: 3rem auto;
     text-align: center;
 }
 
-.adventures h2 {
-    margin-bottom: 1rem;
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
 }
 
-.adventures figure {
-    display: inline-block;
-    margin: 0.5rem;
+.adventure-gallery img {
+    width: 100%;
 }
 
-.adventures img {
-    width: 180px;
-}
-
-.adventures figcaption {
+.adventure-gallery figcaption {
     font-size: 0.9rem;
     margin-top: 0.25rem;
 }
 
 /* =====================
-   FOOTER
+   FOOTER (FLEX)
 ===================== */
-footer {
+.site-footer {
     background-color: var(--accent1-color);
     display: flex;
     justify-content: space-between;
@@ -153,7 +149,11 @@ footer {
     padding: 1rem 2rem;
 }
 
-footer img {
+.social {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.site-footer img {
     width: 30px;
-    margin-left: 0.5rem;
 }
