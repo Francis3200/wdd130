@@ -157,3 +157,121 @@ h3 {
 .site-footer img {
     width: 30px;
 }
+
+/* =====================
+   CONTACT PAGE
+===================== */
+
+main h1 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+/* Company Info */
+.contact-info {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+}
+
+.contact-info p {
+    margin: 0.25rem 0;
+}
+
+.contact-info iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 1.5rem;
+    border: none;
+}
+
+/* Layout Map + Form */
+.contact-form,
+.contact-info {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-bottom: 3rem;
+}
+
+/* Form Styling */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 0.5rem;
+    font-family: var(--paragraph-font);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+fieldset legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+fieldset label {
+    font-weight: normal;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.checkbox {
+    font-weight: normal;
+}
+
+.contact-form button {
+    margin-top: 1rem;
+    padding: 0.6rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Employees Section */
+.employees {
+    max-width: 1000px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.employee-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.employee-gallery img {
+    width: 100px;
+}
+
+.employee-gallery figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
