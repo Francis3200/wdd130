@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Us | White Water Rafting</title>
+
     <meta name="description"
       content="Contact White Water Rafting for questions, reservations, and adventure information.">
+    <meta name="author" content="Francis Perez">
+
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -16,92 +20,93 @@
         <img src="styles/images/rafting logo.png" alt="Rafting Site Logo" class="logo">
 
         <nav class="navigation">
-            <a href="https://francis3200.github.io/wdd130/">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="#">Trips</a>
+            <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <main>
 
-        <h1>Contact Us</h1>
+        <h1>Contact White Water Rafting</h1>
 
         <!-- Company Information -->
         <section class="contact-info">
-            <h2>Company Information</h2>
-            <p><strong>Address:</strong> 123 River Road, Adventure City, USA</p>
-            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+            <p><strong>Address:</strong> 123 Main River Street, Kolob, California</p>
+            <p><strong>Phone:</strong> +1 999 999 9999</p>
+            <p><strong>Email:</strong> info@whitewater.com</p>
 
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019793083737!2d-122.41941548468133!3d37.77492927975906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5bbf0d0f%3A0x9f4e5b2f8b7e5e9!2sSan%20Francisco!5e0!3m2!1sen!2sus!4v1700000000000"
-              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-        </section>
-
-        <!-- Employees -->
-        <section class="employees">
-            <h2>Meet Our Team</h2>
-
-            <div class="employee-gallery">
-                <figure>
-                    <img src="styles/images/employee1.webp" alt="John Smith">
-                    <figcaption>John Smith – Lead River Guide</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="styles/images/employee2.webp" alt="Sarah Johnson">
-                    <figcaption>Sarah Johnson – Operations Manager</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="styles/images/employee3.webp" alt="Michael Brown">
-                    <figcaption>Michael Brown – Safety Coordinator</figcaption>
-                </figure>
-            </div>
         </section>
 
         <!-- Contact Form -->
         <section class="contact-form">
-            <h2>Send Us a Message</h2>
-
             <form action="#" method="post">
-                <label for="name">Name:</label>
+
+                <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
 
                 <fieldset>
-                    <legend>Purpose of Message:</legend>
+                    <legend>Message Purpose</legend>
 
-                    <label>
-                        <input type="radio" name="purpose" value="general" required>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" required>
                         General Inquiry
                     </label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
                         Reservation Question
                     </label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion">
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
                         Website Suggestion
                     </label>
                 </fieldset>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
 
-                <label class="checkbox">
-                    <input type="checkbox" name="newsletter">
+                <label class="checkbox" for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
                     Please subscribe me to the monthly newsletter
                 </label>
 
-                <button type="submit">Send Message</button>
+                <button type="submit">Get in Touch!</button>
             </form>
+        </section>
+
+        <!-- Employees -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="employee-grid">
+                <figure>
+                    <img src="styles/images/Rafting adventure 2.webp"
+                      alt="John Smith, Lead River Guide">
+                    <figcaption>John Smith – Lead River Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="styles/images/Rafting adventure 3.webp"
+                      alt="Sarah Johnson, Operations Manager">
+                    <figcaption>Sarah Johnson – Operations Manager</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="styles/images/Rafting adventure 1.webp"
+                      alt="Michael Brown, Safety Coordinator">
+                    <figcaption>Michael Brown – Safety Coordinator</figcaption>
+                </figure>
+            </div>
         </section>
 
     </main>
@@ -109,11 +114,17 @@
     <footer class="site-footer">
         <p>©2026 | White Water Rafting | Francis Perez</p>
 
-        <div class="social">
-            <img src="styles/images/facebook.png" alt="Facebook">
-            <img src="styles/images/twitter.png" alt="Twitter">
-            <img src="styles/images/instagram.png" alt="Instagram">
-        </div>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="styles/images/facebook.png" alt="White Water Rafting Facebook page">
+            </a>
+            <a href="https://twitter.com">
+                <img src="styles/images/twitter.png" alt="White Water Rafting Twitter page">
+            </a>
+            <a href="https://instagram.com">
+                <img src="styles/images/instagram.png" alt="White Water Rafting Instagram page">
+            </a>
+        </nav>
     </footer>
 
 </body>

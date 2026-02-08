@@ -46,7 +46,8 @@ h3 {
 
 .navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap: 1rem;
 }
 
 .navigation a {
@@ -180,9 +181,10 @@ main h1 {
 
 .contact-info iframe {
     width: 100%;
-    height: 300px;
+    height: 260px;
     margin-top: 1.5rem;
-    border: none;
+    border: 1px solid #999;
+    background-color: #eee;
 }
 
 /* Layout Map + Form */
@@ -253,25 +255,74 @@ fieldset label {
     background-color: var(--secondary-color);
 }
 
-/* Employees Section */
+/* =====================
+   EMPLOYEES – WIREFRAME STYLE
+===================== */
+
 .employees {
     max-width: 1000px;
     margin: 3rem auto;
+    border: 1px solid #999;
+    padding: 1.5rem;
     text-align: center;
 }
 
+.employees h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* Gallery layout */
 .employee-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-top: 1rem;
+    justify-items: center;
 }
 
+/* Each employee card */
+.employee-gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image placeholder like wireframe */
 .employee-gallery img {
-    width: 100px;
+    width: 140px;
+    /* horizontal */
+    height: 90px;
+    /* small */
+    background-color: #e6e6e6;
+    border: 1px solid #999;
+    object-fit: cover;
 }
 
+.employee-grid img {
+    width: 150px;
+    /* tamaño más pequeño */
+    height: auto;
+    /* mantiene proporción */
+    border-radius: 8px;
+}
+
+.employee-grid {
+    display: flex;
+    justify-content: center;
+    /* centra las imágenes */
+    align-items: center;
+    gap: 2rem;
+    /* espacio entre ellas */
+}
+
+.employee-grid img {
+    width: 120px;
+    /* tamaño pequeño */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Caption */
 .employee-gallery figcaption {
     margin-top: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
