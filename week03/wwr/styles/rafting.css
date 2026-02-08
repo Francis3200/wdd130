@@ -297,14 +297,6 @@ fieldset label {
     object-fit: cover;
 }
 
-.employee-grid img {
-    width: 150px;
-    /* tamaño más pequeño */
-    height: auto;
-    /* mantiene proporción */
-    border-radius: 8px;
-}
-
 .employee-grid {
     display: flex;
     justify-content: center;
