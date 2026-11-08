@@ -1,0 +1,70 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header and footer */
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Footer font size */
+footer {
+    font-size: 0.9rem;
+}
+
+/* Main content */
+main {
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Main heading */
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+/* Images */
+img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 30px gray;
+}
+
+/* Sections */
+section {
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #ddd;
+    font-size: 0.9rem;
+}
+
+/* Paragraphs inside sections */
+section p {
+    margin: 10px;
+}
+
+/* Section headings */
+h2 {
+    border-bottom: 1px solid #333;
+}
+
+/* Unordered lists */
+ul {
+    margin: 10px 20px 0;
+}
